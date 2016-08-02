@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B76B8F0D1D4FCAC0003C9BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76B8F0C1D4FCAC0003C9BBC /* AppDelegate.swift */; };
-		B76B8F0F1D4FCAC0003C9BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76B8F0E1D4FCAC0003C9BBC /* ViewController.swift */; };
+		B76B8F0F1D4FCAC0003C9BBC /* TipCalcVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76B8F0E1D4FCAC0003C9BBC /* TipCalcVC.swift */; };
 		B76B8F121D4FCAC0003C9BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76B8F101D4FCAC0003C9BBC /* Main.storyboard */; };
 		B76B8F141D4FCAC0003C9BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B76B8F131D4FCAC0003C9BBC /* Assets.xcassets */; };
 		B76B8F171D4FCAC0003C9BBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76B8F151D4FCAC0003C9BBC /* LaunchScreen.storyboard */; };
+		B76B8F231D4FE781003C9BBC /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76B8F221D4FE781003C9BBC /* Tip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B76B8F091D4FCAC0003C9BBC /* My Tip Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Tip Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76B8F0C1D4FCAC0003C9BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B76B8F0E1D4FCAC0003C9BBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B76B8F0E1D4FCAC0003C9BBC /* TipCalcVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalcVC.swift; sourceTree = "<group>"; };
 		B76B8F111D4FCAC0003C9BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B76B8F131D4FCAC0003C9BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B76B8F161D4FCAC0003C9BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B76B8F181D4FCAC0003C9BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B76B8F221D4FE781003C9BBC /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		B76B8F0B1D4FCAC0003C9BBC /* My Tip Machine */ = {
 			isa = PBXGroup;
 			children = (
-				B76B8F0C1D4FCAC0003C9BBC /* AppDelegate.swift */,
-				B76B8F0E1D4FCAC0003C9BBC /* ViewController.swift */,
-				B76B8F101D4FCAC0003C9BBC /* Main.storyboard */,
-				B76B8F131D4FCAC0003C9BBC /* Assets.xcassets */,
-				B76B8F151D4FCAC0003C9BBC /* LaunchScreen.storyboard */,
-				B76B8F181D4FCAC0003C9BBC /* Info.plist */,
+				B76B8F211D4FCB9D003C9BBC /* Resource */,
+				B76B8F201D4FCB6B003C9BBC /* Controller */,
+				B76B8F1F1D4FCB66003C9BBC /* Model */,
+				B76B8F1E1D4FCB60003C9BBC /* View */,
 			);
 			path = "My Tip Machine";
+			sourceTree = "<group>";
+		};
+		B76B8F1E1D4FCB60003C9BBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B76B8F101D4FCAC0003C9BBC /* Main.storyboard */,
+				B76B8F151D4FCAC0003C9BBC /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B76B8F1F1D4FCB66003C9BBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B76B8F221D4FE781003C9BBC /* Tip.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B76B8F201D4FCB6B003C9BBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B76B8F0C1D4FCAC0003C9BBC /* AppDelegate.swift */,
+				B76B8F0E1D4FCAC0003C9BBC /* TipCalcVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B76B8F211D4FCB9D003C9BBC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B76B8F181D4FCAC0003C9BBC /* Info.plist */,
+				B76B8F131D4FCAC0003C9BBC /* Assets.xcassets */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B76B8F0F1D4FCAC0003C9BBC /* ViewController.swift in Sources */,
+				B76B8F231D4FE781003C9BBC /* Tip.swift in Sources */,
+				B76B8F0F1D4FCAC0003C9BBC /* TipCalcVC.swift in Sources */,
 				B76B8F0D1D4FCAC0003C9BBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +333,7 @@
 				B76B8F1D1D4FCAC0003C9BBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
